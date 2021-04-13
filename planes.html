@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/estilos.css">
+
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<header class="">
+		<nav id="menu" class="navbar navbar-expand-lg navbar-light bg-home navbar-inverse navbar-fixed-top  ">
+			<div class="container">
+				<a class="navbar-brand" href="#">Intralink</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class=""><i class="bi bi-list"></i></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Nosotros</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="planes.html">Planes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Productos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contacto.html">Contacto</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav flex-row flex-wrap ms-md-auto" style="vertical-align: middle;">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Inicia sesión</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Regístrese</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container ptb">
+		<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+			<h2 class="fw-normal">Planes</h2>
+			<p class="fs-5 text-muted">Quickly build an effective pricing table for your potential 
+			</p>
+		</div>
+
+		<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+			<div class="col">
+				<div class="card mb-4 rounded-3 shadow-sm">
+					<div class="card-header py-3">
+						<h4 class="my-0 fw-normal">Básico</h4>
+					</div>
+					<div class="card-body">
+						<h1 class="card-title pricing-card-title">S/ 36<small class="text-muted fw-light">/mes</small></h1>
+						<ul class="list-unstyled mt-3 mb-4">
+							<li>10 users included</li>
+							<li>2 GB of storage</li>
+							<li>Email support</li>
+							<li>Help center access</li>
+						</ul>
+						<button type="button" class="w-100 btn btn-lg btn-outline-dark">Contratar</button>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card mb-4 rounded-3 shadow-sm">
+					<div class="card-header py-3">
+						<h4 class="my-0 fw-normal">Premium</h4>
+					</div>
+					<div class="card-body">
+						<h1 class="card-title pricing-card-title">S/56<small class="text-muted fw-light">/mes</small></h1>
+						<ul class="list-unstyled mt-3 mb-4">
+							<li>20 users included</li>
+							<li>10 GB of storage</li>
+							<li>Priority email support</li>
+							<li>Help center access</li>
+						</ul>
+						<button type="button" class="w-100 btn btn-lg btn-dark">Contratar</button>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card mb-4 rounded-3 shadow-sm border-dark">
+					<div class="card-header py-3 text-white bg-dark border-dark">
+						<h4 class="my-0 fw-normal">Enterprise</h4>
+					</div>
+					<div class="card-body">
+						<h1 class="card-title pricing-card-title">S/86<small class="text-muted fw-light">/mes</small></h1>
+						<ul class="list-unstyled mt-3 mb-4">
+							<li>30 users included</li>
+							<li>15 GB of storage</li>
+							<li>Phone and email support</li>
+							<li>Help center access</li>
+						</ul>
+						<button type="button" class="w-100 btn btn-lg btn-dark">Coontratar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h2 class="text-center mb-4">Comparación de planes</h2>
+
+		<div class="table-responsive">
+			<table class="table text-center">
+				<thead>
+					<tr>
+						<th style="width: 34%;"></th>
+						<th style="width: 22%;">Básico</th>
+						<th style="width: 22%;">Premium</th>
+						<th style="width: 22%;">Enterprise</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row" class="text-start">Public</th>
+						<td><svg class="bi" width="24" height="24">
+								<use xlink:href="#check" />
+							</svg></td>
+						<td><svg class="bi" width="24" height="24">
+								<use xlink:href="#check" />
+							</svg></td>
+						<td><svg class="bi" width="24" height="24">
+								<use xlink:href="#check" />
+							</svg></td>
+					</tr>
+					<tr>
+						<th scope="row" class="text-start">Private</th>
+						<td></td>
+						<td><svg class="bi" width="24" height="24">
+								<use xlink:href="#check" />
+							</svg></td>
+						<td><svg class="bi" width="24" height="24">
+								<use xlink:href="#check" />
+							</svg></td>
+					</tr>
+				</tbody>
+
+				<tbody>
+					<tr>
+						<th scope="row" class="text-start">Permissions</th>
+						<td><svg class="bi" width="24" height="24">
+								<use xlink:href="#check" />
+							</svg></td>
+						<td><svg class="bi" width="24" height="24">
+								<use xlink:href="#check" />
+							</svg></td>
+						<td><svg class="bi" width="24" height="24">
+								<use xlink:href="#check" />
+							</svg></td>
+					</tr>
+					<tr>
+						<th scope="row" class="text-start">Sharing</th>
+						<td></td>
+						<td><svg class="bi" width="24" height="24">
+								<use xlink:href="#check" />
+							</svg></td>
+						<td><svg class="bi" width="24" height="24">
+								<use xlink:href="#check" />
+							</svg></td>
+					</tr>
+					<tr>
+						<th scope="row" class="text-start">Unlimited members</th>
+						<td></td>
+						<td><svg class="bi" width="24" height="24">
+								<use xlink:href="#check" />
+							</svg></td>
+						<td><svg class="bi" width="24" height="24">
+								<use xlink:href="#check" />
+							</svg></td>
+					</tr>
+					<tr>
+						<th scope="row" class="text-start">Extra security</th>
+						<td></td>
+						<td></td>
+						<td><svg class="bi" width="24" height="24">
+								<use xlink:href="#check" />
+							</svg></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script>
+		$(function () {
+			$(document).scroll(function () {
+				var $nav = $(".navbar-fixed-top");
+				$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+			});
+		});
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"></script>
+
+</body>
+
+</html>
