@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero{
+    height: 70vh;
+    min-height: 70vh;
+    overflow: hidden;
+}
+.ptb{
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+
+}
+.ptb-md{
+  padding-top: 120px !important;
+    padding-bottom: 120px !important;
+}
+.card {
+    border: none !important;
+}
+.hero .container{
+    max-width: 730px;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+}
+body{
+    font-family: "Roboto";
+    font-weight: 400;
+}
+.nav-link{
+    font-size: 16px;
+    font-weight: 500;
+}
+.bg-kona{
+    background: #6930c3 ;
+    text-align: right;
+}
+
+  
+/*-------------BY ASCONA-------------------*/
+
+.video-container {height: 90vh; position: relative; overflow: hidden !important;@media(min-width: 600px) { height: 100vh;}}
+
+  video {object-fit: cover;position: absolute;height: 100%;width: 100%;top: 0;left: 0;}
+  * {box-sizing: border-box;}
+  .video-container:after {content: '';display: block;height: 100%;width: 100%; background: #00000034 ; position: absolute;top: 0;left: 0;background: rgba(black, .2);z-index: 1;}
+  
+  .logopeli{width: 90%; padding-bottom: 20px;}
+  
+  .callout { position: relative;display: flex;justify-content: center;align-items: left;flex-direction: column; height: 100%;text-align: left; z-index: 99;}
+  .vol {position: absolute;justify-content: flex-end; align-items: right;bottom: 20%;display: flex;text-align: right;}
+  .wz h1,h3{color: white;}
+  .bg-tra{ background: rgba(109,109,110,0.4) !important;color: white !important;}
+  .bg-vol{ padding: 0 !important;border: 1px solid white !important;border-radius: 50% !important; color: white !important;width: 33px;height: 33px;}
+  p{color: gray !important;font-size: 18px;line-height: 28px;}
+  .navbar-brand{color: #ffffff !important;font-size: 25px !important;font-weight: 700;text-transform: uppercase;vertical-align: middle;cursor: pointer;}
+.container{max-width: 1240px !important;}
+header{ width: 100%;position: fixed;z-index: 999;}
+
+.bg-home{
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,rgba(0,0,0,.4)),color-stop(10%,rgba(0,0,0,0))); 
+    background-image: -webkit-linear-gradient(top,rgba(0,0,0,.4) 10%,rgba(0,0,0,0)); 
+    background-image: -moz- oldlinear-gradient(top,rgba(0,0,0,.4) 10%,rgba(0,0,0,0));
+    background-image: -o-linear-gradient(top,rgba(0,0,0,.4) 10%,rgba(0,0,0,0));
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.4) 10%,rgba(0,0,0,0));
+}
+
+.bg-home.scrolled{background: black !important;}
+.navbar-nav a{color: #ffffff !important;}
+.ok{margin-top: -45px; position: relative;}
+.oka{padding-bottom: 3rem !important;}
+.ok1{ padding-bottom: 3rem !important;}
+.ok2{padding-bottom: 3rem !important;}
+.wz h2{font-size: 60px !important;}
+.ok h4{ font-size: 20px;color: white !important;}
+.ok1 h4{font-size: 20px;color: white !important;}
+.ok2 h4{font-size: 20px; color: white !important;}
+.card{border: none !important;}
+.ok .row .col{padding-right: 1px !important;padding-left: 4px !important;}
+.ok1 .row .col{padding-right: 1px !important;padding-left: 4px !important;}
+.ok2 .row .col{padding-right: 1px !important; padding-left: 4px !important;}
+/*body{background: #141414 !important;color: #ffffff !important;}*/
+.bg-movil{background: #ffffff !important;}
+.navbar-light .navbar-toggler{
+  border-color: transparent !important;}
+.ok .card img:hover{transform: scale(1.2);transform-origin: center;z-index: 99;transition: .3s ease all;cursor: pointer;}
+.ok1 .card img:hover{ transform: scale(1.2);transform-origin: center;z-index: 99;transition: .3s ease all;cursor: pointer;}
+.ok2 .card img:hover{transform: scale(1.2);	transform-origin: center;z-index: 99;transition: .3s ease all;cursor: pointer;}
+.callout .button{cursor: pointer !important;}
+.wz h3{font-size: 24px;}
+.ch h1{
+  font-size: 60x !important;
+}
+
+.card-body img {
+  width: 25%;
+  margin-bottom: 20px;
+}
+.text-box{
+  width: 100%;
+  height: 300px;
+  display: block;
+  text-align: center;
+  padding: 40% 5%;
+  background: peru;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.text-box h2{
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.text-box p{
+  font-size: 14px ;
+  color: #ffffff !important;
+}
+.box{
+  position: relative;
+  margin-bottom: 40px;
+}
+.img-box{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 5px solid blue;
+  overflow: hidden;
+  top: 25px;
+  left: 150px;
+  border-radius: 50%;
+}
+.img-box img{
+  width: 100%;
+}
+
+.carousel-indicators .active{
+  background-color: blue !important;
+}
+.carousel-indicators button{
+  background-color: black !important;
+}
+
+
+
+/*-------------responsive-------------------*/
+
+@media (max-width: 576px) { 
+  .ok{margin-top: -40px !important;position: relative;}
+  .vol {position: absolute;bottom: 9%;}
+  .callout p{font-size: 16px;line-height: 26px;}
+  .ok h4{font-size: 16px;}
+  .ok1 h4{font-size: 16px;}
+  .ok2 h4{font-size: 16px;}
+  .oka {padding-bottom: 1.3rem!important;}
+.ok1 {padding-bottom: 1.3rem!important;}
+.ok2 {padding-bottom: 1.3rem!important;}
+.bg-home{background: black;color: white !important;}
+.bg-home li a{color: white !important;}
+ }
+ @media (max-width: 768px) { 
+  .ok{ margin-top: -50px !important; position: relative;}
+
+  .callout p{font-size: 17px;line-height: 27px;}
+
+  .logopeli{ width: 70%;padding-bottom: 20px;}
+  .bg-home{background: black;color: white !important;}
+.bg-home li a{color: white !important;}
+}
+.navbar-fixed-top.scrolled {background-color: #000000dc !important;transition: background-color 800ms linear;color: #ffffff !important;}
+.navbar-fixed-top.scrolled .nav-link {color:#ffff !important;}
+
+.avatar{
+  max-width: 100%;
+  width:160px;
+  height: 160px;
+  margin:10px auto;
+}
+.item .card{
+  padding: 20px ;
+}
+
+.owl-carousel .owl-item{
+  padding: 10px;
+}
+footer p{
+  font-size: 16px;
+}
+footer i{
+  color: white;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.border-b{
+  width: 80%;
+
+}
+@media (max-width: 576px) {
+  footer i{
+    text-align: center !important;
+  }
+  }
+
+@media (min-width: 768px) { ... }
