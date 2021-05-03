@@ -7,144 +7,245 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Planes</title>
 	<link rel="stylesheet" href="css/estilos.css">
-
-
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/owl.theme.default.css">
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/main.js"></script>
 </head>
 
 <body>
-	<header class="">
-        <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-home navbar-inverse navbar-fixed-top  ">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Intralink</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class=""><i class="bi bi-list" style="font-size:20px;color:#fff"></i></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="planes.html">Planes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav flex-row flex-wrap ms-md-auto" style="vertical-align: middle;">
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Inicia sesión</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="register.html">Regístrese</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-	<section class="bg-dark ptb-md">
-		<div class="container   text-center">
+	<nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top" style="border-bottom: 1px solid #e6e6e6;">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Intralink</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Nosotros</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="planes.html">Planes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="productos.html">Productos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacto.html">Contacto</a>
+					</li>
+				</ul>
+				<button type="button" id="btnm1" class="btn" data-bs-toggle="modal" data-bs-target="#m1"
+					style="margin-right: 10px; font-weight: 500;">
+					Iniciar sesión
+				</button>
+				<button type="button" id="btnm2" class="btn btn-cp" data-bs-toggle="modal" data-bs-target="#m2"
+					style="font-weight: 500;">
+					Registrate
+				</button>
+			</div>
+		</div>
+	</nav>
+	<section class=" ptb-md">
+		<div class="container text-center">
 			<div class="row align-items-center">
-				<div class="col">
-					<h2 class="text-light">Planes</h2>
-					<p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eaque ipsam laudantium.
+				<div class="col-12">
+					<h1 class="text-dark">Nuestros planes</h1>
+					<p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eaque ipsam
+						laudantium.
 					</p>
 				</div>
 			</div>
 		</div>
 	</section>
-	<div class="container ptb">
-		<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+	<div class="container ptb" style="border-bottom: 2px solid rgb(242, 242, 242); url();">
+		<div class="row row-cols-1 row-cols-md-3 mb-3">
 			<div class="col">
-				<div class="card mb-4 rounded-3 shadow-sm">
-					<div class="card-header py-3">
-						<h4 class="my-0 fw-normal">Básico</h4>
+				<div class="card mb-4 shadow">
+					<div class="card-header py-3 bg-c-7">
+						<h4 class="mb-3">Básico</h4>
+						<h2 class="card-title pricing-card-title">S/ 36<small class="text-white fs-5">/mes</small>
+						</h2>
+						<p class="text-white">Lorem ipsum consectetur dolor sit amet consectetur, adipisicing elit.</p>
 					</div>
 					<div class="card-body">
-						<h1 class="card-title pricing-card-title">S/ 36<small class="text-muted fw-light">/mes</small></h1>
 						<ul class="list-unstyled mt-3 mb-4">
-							<li>10 users included</li>
-							<li>2 GB of storage</li>
-							<li>Email support</li>
-							<li>Help center access</li>
+							<li><i class="bi bi-check"></i>10 users included</li>
+							<li><i class="bi bi-check"></i>2 GB of storage</li>
+							<li><i class="bi bi-check"></i>Email support</li>
+							<li><i class="bi bi-check"></i>Help center access</li>
+							<li><i class="bi bi-check"></i>10 GB of storage</li>
 						</ul>
-						<button type="button" class="w-100 btn btn-lg btn-outline-dark">Contratar</button>
+						<button type="button" class="w-100 btn btn-lg bg-c-7">Contratar</button>
 					</div>
 				</div>
 			</div>
 			<div class="col">
-				<div class="card mb-4 rounded-3 shadow-sm">
-					<div class="card-header py-3">
-						<h4 class="my-0 fw-normal">Premium</h4>
+				<div class="card mb-4 shadow">
+					<div class="card-header py-3 bg-c-5">
+						<h4 class="mb-3">Premium</h4>
+						<h2 class="card-title pricing-card-title">S/56<small class="text-white fs-5">/mes</small>
+						</h2>
+						<p class="text-white">Lorem ipsum consectetur dolor sit amet consectetur, adipisicing elit.</p>
 					</div>
 					<div class="card-body">
-						<h1 class="card-title pricing-card-title">S/56<small class="text-muted fw-light">/mes</small></h1>
 						<ul class="list-unstyled mt-3 mb-4">
-							<li>20 users included</li>
-							<li>10 GB of storage</li>
-							<li>Priority email support</li>
-							<li>Help center access</li>
+							<li><i class="bi bi-check"></i>20 users included</li>
+							<li><i class="bi bi-check"></i>10 GB of storage</li>
+							<li><i class="bi bi-check"></i>Priority email support</li>
+							<li><i class="bi bi-check"></i>Priority email support</li>
+							<li><i class="bi bi-check"></i>Help center access</li>
+							<li><i class="bi bi-check"></i>Priority email support</li>
+							<li><i class="bi bi-check"></i>Priority email tyh</li>
+							<li><i class="bi bi-check"></i>Priority email support</li>
 						</ul>
-						<button type="button" class="w-100 btn btn-lg btn-dark">Contratar</button>
+						<button type="button" class="w-100 btn btn-lg bg-c-5">Contratar</button>
 					</div>
 				</div>
 			</div>
 			<div class="col">
-				<div class="card mb-4 rounded-3 shadow-sm border-dark">
-					<div class="card-header py-3 text-white bg-dark border-dark">
-						<h4 class="my-0 fw-normal">Enterprise</h4>
+				<div class="card mb-4 shadow">
+					<div class="card-header py-3 text-white bg-c-2">
+						<div class="row">
+							<div class="col">
+								<h4 class="mb-4">Enterprise</h4>
+							</div>
+							<div class="col text-end">
+								<span class="badge bg-warning text-end">Popular</span>
+							</div>
+						</div>
+						<h2 class="card-title pricing-card-title">S/86<small class="text-white fs-5">/mes</small>
+						</h2>
+						<p class="text-white">Lorem ipsum consectetur dolor sit amet consectetur, adipisicing elit.</p>
 					</div>
 					<div class="card-body">
-						<h1 class="card-title pricing-card-title">S/86<small class="text-muted fw-light">/mes</small></h1>
 						<ul class="list-unstyled mt-3 mb-4">
-							<li>30 users included</li>
-							<li>15 GB of storage</li>
-							<li>Phone and email support</li>
-							<li>Help center access</li>
+							<li><i class="bi bi-check"></i>30 users included</li>
+							<li><i class="bi bi-check"></i>15 GB of storage</li>
+							<li><i class="bi bi-check"></i>10 GB of storage</li>
+							<li><i class="bi bi-check"></i>Priority email support</li>
+							<li><i class="bi bi-check"></i>Help center access</li>
+							<li><i class="bi bi-check"></i>Priority email support</li>
+							<li><i class="bi bi-check"></i>Priority email tyh</li>
+							<li><i class="bi bi-check"></i>Priority email support</li>
+							<li><i class="bi bi-check"></i>Phone and email support</li>
+							<li><i class="bi bi-check"></i>Help center access</li>
 						</ul>
-						<button type="button" class="w-100 btn btn-lg btn-dark">Contratar</button>
+						<button type="button" class="w-100 btn btn-lg bg-c-2">Contratar</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<footer class="bg-dark pt-4 pb-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-12 col-md-8 d-flex justify-content-start">
-                    <p class="text-light mb-0">Copyright &copy; 2021 Intralink. Todos los derechos reservados.</p>
-                </div>
-                <div class="col-sm-12 col-md-4 d-flex justify-content-end">
-                    <div class="redes-sociales">
-                        <i class="bi bi-facebook"></i>
-                        <i class="bi bi-instagram"></i>
-                        <i class="bi bi-whatsapp"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script>
-        $(function() {
-            $(document).scroll(function() {
-                var $nav = $(".navbar-fixed-top");
-                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-            });
-        });
-    </script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+	<div class="container ptb">
+		<div class="row">
+			<div class="col-12 text-center mb-4">
+				<h2>Preguntas frecuentes</h2>
+			</div>
+		</div>
+		<div class="row align-self-center">
+			<div class="col"></div>
+			<div class="col-md-8 col-sm-12">
+				<div class="accordion" id="accordionExample">
+					<div class="accordion-item mb-2">
+						<h2 class="accordion-header" id="headingOne">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Pregunta y respuesta Item #1
+							</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>This is the first item's accordion body.</strong> It is hidden by default, until
+								the
+								collapse plugin adds the appropriate classes that we use to style each element. These
+								classes
+								control the overall appearance, as well as the showing and hiding via CSS transitions.
+								You can
+								modify any of this with custom CSS or overriding our default variables. It's also worth
+								noting
+								that just about any HTML can go within the <code>.accordion-body</code>, though the
+								transition
+								does limit overflow.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item mb-2">
+						<h2 class="accordion-header" id="headingTwo">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Pregunta y respuesta #2
+							</button>
+						</h2>
+						<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>This is the second item's accordion body.</strong> It is hidden by default,
+								until the
+								collapse plugin adds the appropriate classes that we use to style each element. These
+								classes
+								control the overall appearance, as well as the showing and hiding via CSS transitions.
+								You can
+								modify any of this with custom CSS or overriding our default variables. It's also worth
+								noting
+								that just about any HTML can go within the <code>.accordion-body</code>, though the
+								transition
+								does limit overflow.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item mb-2">
+						<h2 class="accordion-header" id="headingThree">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Pregunta y respuesta #3
+							</button>
+						</h2>
+						<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>This is the third item's accordion body.</strong> It is hidden by default, until
+								the
+								collapse plugin adds the appropriate classes that we use to style each element. These
+								classes
+								control the overall appearance, as well as the showing and hiding via CSS transitions.
+								You can
+								modify any of this with custom CSS or overriding our default variables. It's also worth
+								noting
+								that just about any HTML can go within the <code>.accordion-body</code>, though the
+								transition
+								does limit overflow.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col"></div>
+
+		</div>
+
+	</div>
+	<footer class="bg-footer">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-sm-12 col-md-12">
+					<p class="text-light mb-0">Copyright &copy; 2021 Intralink. Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 
